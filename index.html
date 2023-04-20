@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Homework04</title>
+      <title>Homework05</title>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -22,9 +22,9 @@
           <nav class="nav link">
                <a href="./index.html" class="logo link">Web<span class="logo-item link">Studio</span></a>
                <ul class="list link menu">
-                    <li class="link menu-list"><a class="nav-link link" href="./index.html">Studio</a></li>
-                    <li class="link menu-list"><a class="nav-link link" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
-                    <li class="link menu-list"><a class="nav-link link" href="">Contacts</a></li>
+                    <li class="link menu-list border"><a class="nav-link link" href="./index.html">Studio</a></li>
+                    <li class="link menu-list "><a class="nav-link link" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
+                    <li class="link menu-list "><a class="nav-link link" href="">Contacts</a></li>
                </ul>
           </nav> 
           <address class="address link">
@@ -41,7 +41,16 @@
           <section class="hero">
                <div class="container">
                <h1 class="hero-header">Effective Solutions for Your Business</h1>
-               <button type="button" class="hero-button">Order Service</button>
+               <button data-modal-open  type="button" class="hero-button">Order Service</button>
+               <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                      <button data-modal-close>
+                        <svg class="svg-btn" width="8" height="8">
+                          <use href="./images/icon.svg#icon-close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
           </div>
           </section>
           <!-- Strategy -->
@@ -362,6 +371,7 @@
              </div>
      </div>
      </footer>
+     <script src="./js/modal.js"></script>
 </body>
 </html>
 
