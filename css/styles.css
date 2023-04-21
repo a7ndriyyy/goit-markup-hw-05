@@ -123,7 +123,7 @@ img{
   }
 /* nav  */
 .nav-link{
-    display: block;
+    /* display: block; */
     padding:24px 0;
   
     font-weight: 500;
